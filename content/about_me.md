@@ -207,7 +207,7 @@ For the purpose of this study, a state machine system of distributed agents was 
 *DOI: 10.1109/ISAMSR53229.2021.9567855*  
 
 [Publication page](https://ieeexplore.ieee.org/document/9567855)  
-[Paper](/documents/agent-based_modelling_of_car_platooning_for_traffic_optimization.pdf)  
+[Paper](/media/documents/agent-based_modelling_of_car_platooning_for_traffic_optimization.pdf)  
 <br/>
 </div>
 
