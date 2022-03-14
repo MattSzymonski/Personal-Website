@@ -1,0 +1,145 @@
+baseURL = "https://mattszymonski.com"
+theme = "hello-friend-ng"
+
+title = 'Mateusz Matt Szymoński'
+
+DefaultContentLanguage = "en"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+googleAnalytics="UA-107439816-2"
+
+disqusShortname = "mattszymonski"
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpored = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "Mateusz Szymoński"
+
+[markup]
+    defaultMarkdownHandler = "goldmark"
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+
+[blackfriday]
+    hrefTargetBlank = true
+
+[taxonomies]
+    tag      = "tags"
+    category = "categories"
+
+[params]
+    homeSubtitle = "Artist by Heart, Programmer by Brain"
+
+    dateform        = "Jan 2, 2006"
+    dateformShort   = "Jan 2"
+    dateformNum     = "2006-01-02"
+    dateformNumTime = "2006-01-02 15:04 -0700"
+
+
+    # Set disableReadOtherPosts to true in order to hide the links to other posts.
+    #disableReadOtherPosts = false
+
+    enableThemeToggle = true
+
+    # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+    #justifyContent = false  # Set "text-align: justify" to .content.
+
+    # Directory name of your blog content (default is `content/posts`)
+    contentTypeName = "posts"
+
+    # Default theme "light" or "dark"
+    defaultTheme = "dark"
+    themeColorDark = "#252627"
+    themeColorLight = "#fafafa"
+
+   # [params.backgroundImage]
+    backgroundImage = "UnitedEarthFederation.jpg"
+
+    [params.logo]
+        logoText     = "MattSzymonski"
+        logoHomeLink = "/"
+        # Set true to remove the logo cursor entirely.
+        # logoCursorDisabled = false
+        # Set to a valid CSS color to change the cursor in the logo.
+        logoCursorColor    = "#e6f2ff"
+        # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+        logoCursorAnimate  = "1.2s"
+        #logoMark = " "
+
+    #[[params.social]]
+    #    name = "email"
+    #    url  = "mailto:@gmail.com"
+    
+    [[params.social]]
+        name = "Twitter"
+        url  = "https://twitter.com/MattSzymonski"
+
+    [[params.social]]
+        name = "LinkedIn"
+        url  = "https://linkedin.com/in/MattSzymonski"
+
+    [[params.social]]
+        name = "GitHub"
+        url  = "https://github.com/MattSzymonski"
+
+    [[params.social]]
+        name = "ArtStation"
+        url  = "https://www.artstation.com/mattszymonski"
+
+    [[params.social]]
+        name = "YouTube"
+        url  = "https://www.youtube.com/channel/UCda5NWZtWc-KaKcV2uK8QMQ"
+
+    # Colors for favicons
+    [params.favicon.color]
+        maskDark = "#252627"
+        maskLight = "#fafafa"
+        msapplicationDark = "#252627"
+        msapplicationLight = "#fafafa"
+        themeDark = "#252627"
+        themeLight = "#fafafa"
+
+    [menu]
+        [[menu.main]]
+            identifier = "about_me"
+            name       = "About Me"
+            url        = "about_me/"
+        #[[menu.main]]
+        #    identifier = "posts"
+        #    name       = "Posts"
+        #    url        = "posts/"
+        [[menu.main]]
+            identifier = "support"
+            name       = "Support"
+            url        = "support/"
+
+    [params.footer]
+        trademark = true
+        rss = true
+        copyright = false
+        author = true
